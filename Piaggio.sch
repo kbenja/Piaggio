@@ -1,0 +1,372 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R2
+U 1 1 58BC7D98
+P 6150 4050
+F 0 "R2" V 6230 4050 50  0000 C CNN
+F 1 "10k" V 6150 4050 50  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 6080 4050 50  0001 C CNN
+F 3 "" H 6150 4050 50  0000 C CNN
+	1    6150 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 58BC7E4C
+P 6150 5100
+F 0 "R3" V 6230 5100 50  0000 C CNN
+F 1 "10k" V 6150 5100 50  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 6080 5100 50  0001 C CNN
+F 3 "" H 6150 5100 50  0000 C CNN
+	1    6150 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 58BC7E85
+P 2600 3200
+F 0 "R1" V 2680 3200 50  0000 C CNN
+F 1 "10k" V 2600 3200 50  0000 C CNN
+F 2 "Resistors_Universal:Resistor_SMD+THTuniversal_0805to1206_RM10_HandSoldering" V 2530 3200 50  0001 C CNN
+F 3 "" H 2600 3200 50  0000 C CNN
+	1    2600 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L POT RV1
+U 1 1 58BC80D7
+P 3150 3200
+F 0 "RV1" V 2975 3200 50  0000 C CNN
+F 1 "10k" V 3050 3200 50  0000 C CNN
+F 2 "" H 3150 3200 50  0001 C CNN
+F 3 "" H 3150 3200 50  0000 C CNN
+	1    3150 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L POT RV2
+U 1 1 58BC81BE
+P 6450 4350
+F 0 "RV2" V 6275 4350 50  0000 C CNN
+F 1 "10k" V 6350 4350 50  0000 C CNN
+F 2 "" H 6450 4350 50  0001 C CNN
+F 3 "" H 6450 4350 50  0000 C CNN
+	1    6450 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L TSV912 U1
+U 1 1 58BC8283
+P 5050 3650
+F 0 "U1" H 5050 3850 50  0000 L CNN
+F 1 "TSV912" H 5050 3450 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 5050 3250 50  0001 C CNN
+F 3 "" H 5050 3850 50  0000 C CNN
+	1    5050 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L TSV912 U1
+U 2 1 58BC835D
+P 7650 3750
+F 0 "U1" H 7650 3950 50  0000 L CNN
+F 1 "TSV912" H 7650 3550 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 7650 3350 50  0001 C CNN
+F 3 "" H 7650 3950 50  0000 C CNN
+	2    7650 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 58BC83CF
+P 3800 4500
+F 0 "C1" H 3825 4600 50  0000 L CNN
+F 1 "390p" H 3825 4400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 3838 4350 50  0001 C CNN
+F 3 "" H 3800 4500 50  0000 C CNN
+	1    3800 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3650 7350 3650
+Wire Wire Line
+	6150 3650 6150 3900
+Wire Wire Line
+	6150 4200 6150 4350
+Wire Wire Line
+	6150 4500 6150 4950
+Wire Wire Line
+	6150 4800 4650 4800
+Wire Wire Line
+	4650 4800 4650 3750
+Wire Wire Line
+	4650 3750 4750 3750
+Connection ~ 6150 4800
+Wire Wire Line
+	2750 3200 3000 3200
+Wire Wire Line
+	3150 3550 4750 3550
+Wire Wire Line
+	3800 3550 3800 4350
+Connection ~ 3800 3550
+Wire Wire Line
+	6150 5250 6150 5450
+Wire Wire Line
+	6150 5450 3800 5450
+Wire Wire Line
+	3800 5450 3800 4650
+$Comp
+L GND #PWR01
+U 1 1 58BC8F97
+P 5000 5450
+F 0 "#PWR01" H 5000 5200 50  0001 C CNN
+F 1 "GND" H 5000 5300 50  0000 C CNN
+F 2 "" H 5000 5450 50  0000 C CNN
+F 3 "" H 5000 5450 50  0000 C CNN
+	1    5000 5450
+	1    0    0    -1  
+$EndComp
+Text GLabel 1950 3200 0    60   Input ~ 0
+Vin
+Wire Wire Line
+	1950 3200 2450 3200
+Text GLabel 8550 3750 2    60   Input ~ 0
+Vout
+$Comp
+L CONN_01X04 P1
+U 1 1 58BC973D
+P 9450 2750
+F 0 "P1" H 9450 3000 50  0000 C CNN
+F 1 "CONN_01X04" V 9550 2750 50  0000 C CNN
+F 2 "" H 9450 2750 50  0001 C CNN
+F 3 "" H 9450 2750 50  0000 C CNN
+	1    9450 2750
+	1    0    0    -1  
+$EndComp
+Text GLabel 8950 2600 0    60   Input ~ 0
+Vin
+Text GLabel 8950 2750 0    60   Input ~ 0
+Vout
+$Comp
+L GND #PWR02
+U 1 1 58BC9C47
+P 9100 3000
+F 0 "#PWR02" H 9100 2750 50  0001 C CNN
+F 1 "GND" H 9100 2850 50  0000 C CNN
+F 2 "" H 9100 3000 50  0000 C CNN
+F 3 "" H 9100 3000 50  0000 C CNN
+	1    9100 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 2600 8950 2600
+Wire Wire Line
+	9250 2700 9000 2700
+Wire Wire Line
+	9000 2700 9000 2750
+Wire Wire Line
+	9000 2750 8950 2750
+Wire Wire Line
+	9250 2800 9000 2800
+Wire Wire Line
+	9000 2800 9000 2900
+Wire Wire Line
+	9000 2900 8950 2900
+Wire Wire Line
+	9250 2900 9100 2900
+Wire Wire Line
+	9100 2900 9100 3000
+Text Notes 7750 7500 0    60   ~ 0
+Non-inverting amplifier (Gain of 2.5) with Low-pass Filter
+Text Notes 10800 7650 0    60   ~ 0
+1
+Text Notes 8650 7650 0    60   ~ 0
+March 5th, 2017
+Connection ~ 6150 3650
+Wire Wire Line
+	7950 3750 8550 3750
+Wire Wire Line
+	8100 3750 8100 4300
+Wire Wire Line
+	8100 4300 7250 4300
+Wire Wire Line
+	7250 4300 7250 3850
+Wire Wire Line
+	7250 3850 7350 3850
+Connection ~ 8100 3750
+Text Notes 7050 7000 0    60   ~ 0
+TSV912 is a Rail-to-Rail OpAmp so it will work for the output range of 0-5V \nvia a 5VDC Power Supply. However, as an extra precaution, we could step up 5VDC \nby a Boost Converter so we don't run into an issue where Output clips well before 5V.\nA buffer is added at the end to lower the Output resistance
+$Comp
+L VEE #PWR03
+U 1 1 58BC9623
+P 5300 4250
+F 0 "#PWR03" H 5300 4100 50  0001 C CNN
+F 1 "VEE" H 5300 4400 50  0000 C CNN
+F 2 "" H 5300 4250 50  0000 C CNN
+F 3 "" H 5300 4250 50  0000 C CNN
+	1    5300 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L +5V #PWR04
+U 1 1 58BCA489
+P 4950 2800
+F 0 "#PWR04" H 4950 2650 50  0001 C CNN
+F 1 "+5V" H 4950 2940 50  0000 C CNN
+F 2 "" H 4950 2800 50  0000 C CNN
+F 3 "" H 4950 2800 50  0000 C CNN
+	1    4950 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR05
+U 1 1 58BCA4C1
+P 7550 2800
+F 0 "#PWR05" H 7550 2650 50  0001 C CNN
+F 1 "+5V" H 7550 2940 50  0000 C CNN
+F 2 "" H 7550 2800 50  0000 C CNN
+F 3 "" H 7550 2800 50  0000 C CNN
+	1    7550 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 58BCA4F0
+P 4950 3950
+F 0 "#PWR06" H 4950 3700 50  0001 C CNN
+F 1 "GND" H 4950 3800 50  0000 C CNN
+F 2 "" H 4950 3950 50  0000 C CNN
+F 3 "" H 4950 3950 50  0000 C CNN
+	1    4950 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 58BCA557
+P 7550 4050
+F 0 "#PWR07" H 7550 3800 50  0001 C CNN
+F 1 "GND" H 7550 3900 50  0000 C CNN
+F 2 "" H 7550 4050 50  0000 C CNN
+F 3 "" H 7550 4050 50  0000 C CNN
+	1    7550 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR08
+U 1 1 58BCA66D
+P 8950 2900
+F 0 "#PWR08" H 8950 2750 50  0001 C CNN
+F 1 "+5V" H 8950 3040 50  0000 C CNN
+F 2 "" H 8950 2900 50  0000 C CNN
+F 3 "" H 8950 2900 50  0000 C CNN
+	1    8950 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C2
+U 1 1 58BCAC97
+P 5700 3250
+F 0 "C2" H 5725 3350 50  0000 L CNN
+F 1 "0.1u" H 5725 3150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 5738 3100 50  0001 C CNN
+F 3 "" H 5700 3250 50  0000 C CNN
+	1    5700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 58BCACE6
+P 8100 3250
+F 0 "C3" H 8125 3350 50  0000 L CNN
+F 1 "0.1u" H 8125 3150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 8138 3100 50  0001 C CNN
+F 3 "" H 8100 3250 50  0000 C CNN
+	1    8100 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 58BCAD3C
+P 8100 3400
+F 0 "#PWR09" H 8100 3150 50  0001 C CNN
+F 1 "GND" H 8100 3250 50  0000 C CNN
+F 2 "" H 8100 3400 50  0000 C CNN
+F 3 "" H 8100 3400 50  0000 C CNN
+	1    8100 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3100 7550 3100
+Wire Wire Line
+	7550 2800 7550 3450
+Connection ~ 7550 3100
+Wire Wire Line
+	8100 3400 8100 3400
+$Comp
+L GND #PWR010
+U 1 1 58BCAF81
+P 5700 3400
+F 0 "#PWR010" H 5700 3150 50  0001 C CNN
+F 1 "GND" H 5700 3250 50  0000 C CNN
+F 2 "" H 5700 3400 50  0000 C CNN
+F 3 "" H 5700 3400 50  0000 C CNN
+	1    5700 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3400 5700 3400
+Wire Wire Line
+	5700 3100 4950 3100
+Wire Wire Line
+	4950 2800 4950 3350
+Connection ~ 4950 3100
+Wire Wire Line
+	3150 3550 3150 3350
+Wire Wire Line
+	6150 4350 6300 4350
+Wire Wire Line
+	6450 4500 6150 4500
+$EndSCHEMATC
